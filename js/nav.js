@@ -4,8 +4,8 @@ var elems = document.querySelectorAll(".sidenav");
 M.Sidenav.init(elems);
 loadNav();
 
-<!-- berfungsi meload navigation bar yang nantinya akan ditampilkan pada browser ,sebelum menampilkan 
-nantinya pada fungsi loadNav akan memanggil nav.html guna ditampilkan pada browser -->
+/*berfungsi meload navigation bar yang nantinya akan ditampilkan pada browser ,sebelum menampilkan 
+nantinya pada fungsi loadNav akan memanggil nav.html guna ditampilkan pada browser */
 function loadNav() {
  var xhttp = new XMLHttpRequest();
  xhttp.onreadystatechange = function() {
@@ -38,8 +38,8 @@ function loadNav() {
 
 
 
-<!-- pada bagian ini akan meload page atau halaman body,jika status state bernilai 4 pada server maka
-nantinya pada bagian body index akan ditampilkan dan jika berstatus 404 maka halam tidak ditemukan -->
+/*pada bagian ini akan meload page atau halaman body,jika status state bernilai 4 pada server maka
+nantinya pada bagian body index akan ditampilkan dan jika berstatus 404 maka halam tidak ditemukan */
 var page  = window.location.hash.substr(1);
 if (page  == "") page  = "home";
 loadPage(page);
